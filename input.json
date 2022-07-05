@@ -1,0 +1,6 @@
+{
+	"google_sheet_url": "https://docs.google.com/spreadsheets/xxxxxxx",
+	"authorize_file": "./google_token.json",
+	"clear_channel": ["example",
+                     "example2"]
+}
