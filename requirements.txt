@@ -1,0 +1,6 @@
+pandas
+pygsheets
+discord
+pytube
+youtube_dl
+async_timeout
