@@ -3,17 +3,17 @@
 這是一個由python所寫的Discord機器人，主要的功能有清理頻道、播放音樂以及公主連結填刀，除了清理頻道外，另外兩個功能可自行決定是否使用。
 
 ## 目錄
-[python安裝](#python安裝)
-[## Discord設定](#Discord設定)
-[### 添加機器人至伺服器](#添加機器人至伺服器)
-[## 音樂機器人](#音樂機器人)
-[## 公主連結報刀機器人](## 公主連結報刀機器人)
-[### Google sheet](### Google sheet)
-[#### 取得成員的discord ID](#### 取得成員的discord ID)
-[#### 建立每日報刀分頁](#### 建立每日報刀分頁)
-[## 頻道清理](## 頻道清理)
-[## 執行機器人](## 執行機器人)
-[## 參考與感謝](## 參考與感謝)
+* [python安裝](#python安裝)
+* [Discord設定](#Discord設定)
+    * [添加機器人至伺服器](#添加機器人至伺服器)
+* [頻道清理](#頻道清理)
+* [音樂機器人](#音樂機器人)
+* [公主連結報刀機器人](#公主連結報刀機器人)
+    * [Google sheet](#Google-sheet)
+        * [取得成員的discord ID](#取得成員的discord-ID)
+        * [建立每日報刀分頁](#建立每日報刀分頁)
+* [執行機器人](#執行機器人)
+* [參考與感謝](#參考與感謝)
 
 ## python安裝
 1. 安裝[python](https://www.python.org/)，並將其添加至環境變數中
@@ -33,6 +33,10 @@
 1. 在Application頁面的左方OAuth2下選取URL Generator，在scopes中勾選bot後會出現BOT PERMISSIONS，在BOT PERMISSIONS勾選Administrator，複製產生的連結
 2. 或是到OAuth2底下的General中複製機器人CLIENT ID，將ID取代```https://discord.com/api/oauth2/authorize?client_id=xxxxxxx&permissions=8&scope=bot```中的xxxxxxx的部分
 3. 透過連結邀請機器人至伺服器(邀請人需為伺服器擁有者)
+
+## 頻道清理
+* 為了避免誤刪訊息，需要至```input.json```中的```clear_channel```輸入想要清理的頻道名稱
+* 設置後執行機器人即可使用```/clear```清理頻道訊息
 
 ## 音樂機器人
 * 以[vbe0201](https://gist.github.com/vbe0201/ade9b80f2d3b64643d854938d40a0a2d)所提供的python音樂機器人程式碼為基礎進行延伸
@@ -92,9 +96,6 @@
 	- 注意，因為機器人語法的緣故，日期月份的部分需要補0，假設是1月31號，分頁名稱需為```01/31```
 * 或是可以使用指令```!create_sheet```，讓機器人自動創建該月份的分頁
 
-## 頻道清理
-* 為了避免誤刪訊息，需要至```input.json```中的```clear_channel```輸入想要清理的頻道名稱
-* 設置後執行機器人即可使用```/clear```清理頻道訊息
 
 ## 執行機器人
 * 開啟cmd，在黑框框中輸入```python base_bot.py```來執行機器人
