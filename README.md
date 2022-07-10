@@ -61,8 +61,8 @@
 #### Google sheet 模板
 * 使用擅長填表的高木同學的[模板](https://docs.google.com/spreadsheets/d/1Q5FdugvDFv-EciEcrb-6KaTQ3GzXbU6E9mRZ1glQU2M/edit?usp=sharing)進行一點修改
 * 點擊檔案->建立副本，建立自己公會的報刀表
-* 完成後將Google Sheet網址複製至input.json中的google_sheet_url
-* 
+* 完成後將Google Sheet網址複製至```input.json```中的```google_sheet_url```
+
 #### 取得成員的discord ID
 * 為了取得戰隊成員的discord ID，要先開啟discord的開發者模式
 	- 進入discord設定 -> 外觀 -> 進階裡面有開發者模式，把它打開
@@ -78,4 +78,17 @@
 	- 注意，因為機器人語法的緣故，日期月份的部分需要補0，假設是1月31號，分頁名稱需為```01/31```
 * 或是可以使用指令```!create_sheet```，讓機器人自動創建該月份的分頁
 
+## 頻道清理
+* 為了避免誤刪訊息，需要至```input.json```中的```clear_channel```輸入想要清理的頻道名稱
+* 設置後執行機器人即可使用```/clear```清理頻道訊息
 
+## 執行機器人
+* 開啟cmd，在黑框框中輸入```python base_bot.py```來執行機器人
+* 如果不想要音樂機器人的功能，輸入```python base_bot.py --no-musicbot```
+* 如果不想要報刀機器人的功能，輸入```python base_bot.py --no-pcbot```
+* 只想要頻道清理的功能```python base_bot.py --no-musicbot --no-pcbot```
+
+## 參考與感謝
+* 感謝[擅長填表的高木同學](https://github.com/rjchien728/pc_discordbot)的報刀機器人以及google sheet模板
+* [vbe0201](https://gist.github.com/vbe0201/ade9b80f2d3b64643d854938d40a0a2d)之音樂機器人
+* [guac420](https://gist.github.com/guac420/bc612fd3a35cd00ddc1c221c560daa01)之音樂機器人loop修正
