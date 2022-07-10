@@ -2,6 +2,19 @@
 ## 簡介
 這是一個由python所寫的Discord機器人，主要的功能有清理頻道、播放音樂以及公主連結填刀，除了清理頻道外，另外兩個功能可自行決定是否使用。
 
+## 目錄
+[python安裝](## python安裝)
+[## Discord設定](## Discord設定)
+[### 添加機器人至伺服器](### 添加機器人至伺服器)
+[## 音樂機器人](## 音樂機器人)
+[## 公主連結報刀機器人](## 公主連結報刀機器人)
+[### Google sheet](### Google sheet)
+[#### 取得成員的discord ID](#### 取得成員的discord ID)
+[#### 建立每日報刀分頁](#### 建立每日報刀分頁)
+[## 頻道清理](## 頻道清理)
+[## 執行機器人](## 執行機器人)
+[## 參考與感謝](## 參考與感謝)
+
 ## python安裝
 1. 安裝[python](https://www.python.org/)，並將其添加至環境變數中
 2. 下載本專案
@@ -57,6 +70,7 @@
 * 在憑證頁面上方點選建立憑證，選擇服務帳戶
 * 在建立時把自己的gmail新增進去，讓其可以使用API
 * 建立好後進入該服務帳戶，選擇金鑰，新增一個金鑰，並下載該金鑰之json，命名為```google_token.json```，放置於專案資料夾
+* 雖然google sheet api在幾百萬次呼叫的情況下免費，但因為使用專案的關係，會需要綁定付費方式才能繼續使用，所以要記得綁定付費方式
 
 #### Google sheet 模板
 * 使用擅長填表的高木同學的[模板](https://docs.google.com/spreadsheets/d/1Q5FdugvDFv-EciEcrb-6KaTQ3GzXbU6E9mRZ1glQU2M/edit?usp=sharing)進行一點修改
