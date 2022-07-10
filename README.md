@@ -89,6 +89,6 @@
 * 只想要頻道清理的功能```python base_bot.py --no-musicbot --no-pcbot```
 
 ## 參考與感謝
-* 感謝[擅長填表的高木同學](https://github.com/rjchien728/pc_discordbot)的報刀機器人以及google sheet模板
+* [擅長填表的高木同學](https://github.com/rjchien728/pc_discordbot)的報刀機器人以及google sheet模板
 * [vbe0201](https://gist.github.com/vbe0201/ade9b80f2d3b64643d854938d40a0a2d)之音樂機器人
 * [guac420](https://gist.github.com/guac420/bc612fd3a35cd00ddc1c221c560daa01)之音樂機器人loop修正
